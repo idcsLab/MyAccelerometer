@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lOut1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="Accelerometer Sensor Test" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X :"
+        android:id="@+id/lblX"
+        android:layout_marginTop="61dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/lblY"
+        android:layout_alignStart="@+id/lblY" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Y :"
+        android:id="@+id/lblY"
+        android:layout_below="@+id/lblX"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Z :"
+        android:id="@+id/lblZ"
+        android:layout_below="@+id/lblY"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+</RelativeLayout>
